@@ -36,3 +36,42 @@ Before running the project, make sure you have:
 - An [OpenRouter API Key](https://openrouter.ai/keys)  
 
 ---
+
+## ⚡ Setup
+
+### Backend
+```bash
+cd backend
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+cp .env.example .env   # Add your API key
+uvicorn app:app --reload
+
+---
+
+## 📁 Repository Structure
+
+smart-task-planner/
+├── backend/
+│   ├── app.py
+│   ├── models.py
+│   ├── database.py
+│   ├── requirements.txt
+│   ├── .env.example
+│   └── README.md
+│
+├── frontend/              
+│   ├── index.html
+│   ├── src/
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── api.js
+│   ├── package.json
+│   └── README.md
+│
+├── demo/
+│   └── demo_video.mp4    
+│
+            
+
